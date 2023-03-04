@@ -1,42 +1,82 @@
-#buttons
-{
-	text-align: center;
+._noPoints {
+	list-style-type:none;
 }
-#buttons input
-{
-	display:inline-block;
-	margin-right: 1em;
+._noPadding {
+	padding:0;
 }
-#title
-{
-	text-align: center;
-	font-size:32px;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight: bold;
+
+._back {
+	background-color:#e2e6ec;
+	max-width:25%;
+	padding:20px;
 }
-#text
-{
-	text-align: center;
+._parent {
+	background-color: #E6E7E8;
+	max-height:25%;
+	padding-left:15px;
 }
-#text-info 
-{
-	font-size:26px;
-	font-family:Arial, Helvetica, sans-serif;
-	display:block;
-	text-align: center;
-	padding-left:685px;
-	padding-right:685px;
+._content {
+	background-color:#fff;
 }
-#text-buttons
-{
-	text-align: center;
+
+._flex {
+	display:flex;
 }
-#text input
-{
-	display:inline-block;
-	margin-right: 1em;
+._center {
+	align-items:center;
 }
-#text img
-{
-	vertical-align:middle
+
+._site {
+	width:93%;
+}
+
+._shadow {
+	box-shadow: 0px 0px 2px grey
+}
+
+._left {
+	justify-content: flex-start;
+}
+._right {
+	justify-content: flex-end;
+	margin-left:auto;
+	padding-right:15px;
+}
+._column {
+	flex-direction:column;
+}
+
+._marg5 {
+	margin: 5px;
+}
+
+._active {
+	background-color: #CFD0D4;
+	padding:5px;
+}
+._circular_small {
+	border-radius: 25%;
+}
+._circular_large {
+	border-radius: 5%;
+	padding-left:0;
+	flex-grow:1;
+	margin-right:5%;
+}
+
+._icon {
+	width:24px;
+	height:24px;
+}
+
+._item {
+	padding-left:7%;
+}
+
+._info {
+	font-size:13px;
+	color:#464646;
+}
+._space {
+	padding-bottom:2%;
 }
