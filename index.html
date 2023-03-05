@@ -5,6 +5,11 @@
 		<meta charset="utf-8" content="width=device-width, initial-scale=1.0" name="viewport">
 		<script src="files/js/content.js"></script>
 		<link media="screen" href="files/css/sheet.css" rel="stylesheet">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300&display=swap" rel="stylesheet">
+		
 	</head>
 	<body>
 		<ul class="_back _noPoints _shadow">
@@ -12,7 +17,7 @@
 				<div class="_flex _center _left">
 					<img class="_marg5 _icon" src="files/images/star.svg"></img>
 					<img class="_marg5 _icon" src="files/images/alert-triangle.svg"></img>
-					<img class="_marg5 _circular_small _active _icon" src="files/images/calendar.svg"></img>
+					<img class="_marg5 _active_small _icon" src="files/images/calendar.svg"></img>
 				</div>
 				<div class="_flex _center _right">
 					<img class="_marg5 _icon" src="files/images/keyboard.svg"></img>
@@ -21,7 +26,7 @@
 			</li>
 			<li>
 				<ul class="_content _flex _column _shadow _noPadding _noPoints">
-					<li id="_site1" class="_site _flex _item">
+					<li id="_site1" class="_site _flex _center _item _first_item _open">
 						<div class="_flex _center _left">
 							<img class="_marg5 _icon" src="files/images/pinpoint.svg"></img> <span>Bachmann Site</span>
 						</div>
@@ -31,7 +36,7 @@
 						</div>
 						<li>
 							<ul class="_noPoints">
-								<li id="_wm1" class="_wm _flex _item">
+								<li id="_wm1" class="_wm _flex _center _item _open">
 									<div class="_flex _center _left">
 										<img class="_marg5 _icon" src="files/images/windmill.svg"></img> <span>T-01</span>
 									</div>
@@ -40,7 +45,7 @@
 									</div>
 									<li>
 										<ul class="_noPoints">
-											<li id="_gear1" class="_gear _flex _item">
+											<li id="_gear1" class="_gear _center _flex _item _open">
 												<div class="_flex _center _left">
 													<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Rotor Shaft</span>
 												</div>
@@ -48,17 +53,17 @@
 													<span>2 </span> <img class="_marg5 _icon" src="files/images/warning.svg"></img>
 												</div>
 												<li>
-													<ul class="_noPoints">
+													<ul class="_noPoints ">
 														<li id="_outer1" class="_outer _flex _item">
-															<div class="_flex _center _left">
+															<div class="_flex _center _left _open">
 																<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Bearing</span>
 															</div>
 															<div class="_flex _center _right">
 																<span>2 </span> <img class="_marg5 _icon" src="files/images/warning.svg"></img>
 															</div>
-															<li class="_space">
+															<li class="">
 																<ul>
-																	<li id="_inner1" class="_inner _item _flex">
+																	<li id="_inner1" class="_inner _center _closed _item _flex">
 																		<div class="_flex _center _left">
 																			<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>RE</span>
 																		</div>
@@ -68,9 +73,9 @@
 																	</li>
 																</ul>
 															</li>
-															<li class="_space">
-																<ul>
-																	<li id="_inner2" class="_inner _item _flex">
+															<li>
+																<ul class="">
+																	<li id="_inner2" class="_inner _center _closed _item _flex">
 																		<div class="_flex _center _left">
 																			<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>NRE</span>
 																		</div>
@@ -88,14 +93,14 @@
 									</li>
 									<li>
 										<ul class="_noPoints">
-											<li id="_gear2" class="_gear _flex _item">
+											<li id="_gear2" class="_gear _open _center _flex _item">
 												<div class="_flex _center _left">
 													<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Gearbox</span>
 												</div>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer2" class="_outer _flex _item">
-															<div class="_flex _active _circular_large _center _left">
+															<div class="_flex _active_large _center _left">
 																<img class="_marg5 _icon" src="files/images/target.svg"></img>
 																<div class="_flex _column">
 																	<div>Envelope Spectrum HST1</div>
@@ -105,7 +110,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer3" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -120,7 +125,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer4" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -133,7 +138,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer5" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -146,7 +151,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer6" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -159,7 +164,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer7" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -172,7 +177,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer8" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -185,7 +190,7 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
 														<li id="_outer9" class="_outer _flex _item">
 															<div class="_flex _center _left">
@@ -198,27 +203,27 @@
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
-														<li id="_outer10" class="_outer _flex _item">
+														<li id="_outer10" class="_outer _center _closed _flex _item">
 															<div class="_flex _center _left">
 																<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Low Speed Shaft</span>
 															</div>
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
+												<li class="">
 													<ul class="_noPoints">
-														<li id="_outer11" class="_outer _flex _item">
+														<li id="_outer11" class="_outer _center _closed _flex _item">
 															<div class="_flex _center _left">
 																<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Intermediate Shaft</span>
 															</div>
 														</li>
 													</ul>
 												</li>
-												<li class="_space">
-													<ul class="_noPoints">
-														<li id="_outer12" class="_outer _flex _item">
+												<li>
+													<ul class="_noPoints ">
+														<li id="_outer12" class="_outer _center _closed _flex _item">
 															<div class="_flex _center _left">
 																<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>High Speed Shaft</span>
 															</div>
@@ -229,9 +234,9 @@
 										</ul>
 									</li>
 									<li>
-										<ul class="_noPoints">
+										<ul class="_noPoints ">
 											<li id="_gear3" class="_gear _flex _item">
-												<div class="_flex _center _left">
+												<div class="_flex _center _closed _left">
 													<img class="_marg5 _icon" src="files/images/cog.svg"></img> <span>Generator Shaft</span>
 												</div>
 											</li>
