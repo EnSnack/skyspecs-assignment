@@ -9,6 +9,18 @@ span {
 	margin-bottom:auto;
 	padding-left:3px;
 	font-family: 'Noto Sans', sans-serif;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+img {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 /* ==========================================================================
@@ -40,6 +52,9 @@ span {
 	margin-left:auto;
 	padding-right:15px;
 }
+._hidden {
+	display:none;
+}
 
 /* ==========================================================================
    Top Level
@@ -58,6 +73,7 @@ span {
 	border-radius: 25%;
 	background-color: #CFD0D4;
 	padding:5px;
+	cursor:default;
 }
 ._icon {
 	width:24px;
@@ -74,16 +90,17 @@ span {
 	padding-bottom:1%;
 }
 
+._active_large ._right {
+	padding-right:0;
+	margin-right:0;
+}
 ._active_large {
 	background-color: #e6e7ea;
 	border-radius: 5px;
 	padding-left:0;
-	flex-grow:1;
 	margin-right:5%;
-	padding:5px 5px 5px 0;
-}
-._item._closed {
-	padding-left: 1%;
+	padding:0 5px 5px 0;
+	cursor:default;
 }
 ._item {
 	padding-left:5%;
@@ -104,7 +121,10 @@ span {
    ========================================================================== */
 ._site div:first-child::before, ._wm div:first-child::before, ._gear div:first-child::before, ._target::before {
 	width:24px;
-	margin:3px 5px 3px 3px;
+	margin-top:auto;
+	margin-bottom:auto;
+	margin-right:5px;
+	margin-left:2px;
 	display:inline-flex;
 }
 
@@ -121,7 +141,7 @@ span {
 	content: url('../images/target.svg');
 }
 
-._open::before, ._closed::before {
+._closed::before, ._open::before {
 	width:12px;
 	display:inline-flex;
 }
@@ -140,6 +160,9 @@ span {
 	margin-right:5%;
 	cursor:pointer;
 	border-radius: 5px;
+}
+._item:not(._active_large):hover ._right {
+	padding-right:0;
 }
 ._parent div img:not(.active_small):hover {
 	background-color: #CFD0D4;
