@@ -2,13 +2,14 @@ div {
 	font-family: 'Noto Sans', sans-serif;
 }
 
+ul, li {
+	list-style-type:none;
+}
+
 ._content li {
 	padding-bottom:1%;
 }
 
-._noPoints {
-	list-style-type:none;
-}
 ._noPadding {
 	padding:0;
 }
@@ -88,15 +89,52 @@ div {
 	padding-top:1%;
 }
 
-._open::before {
+._site div:first-child::before, ._wm div:first-child::before, ._gear div:first-child::before, ._target::before {
+	width:24px;
+	margin:3px 5px 3px 3px;
 	display:inline-flex;
-	content: url('../images/arrow-down.svg');
+}
+
+._site div:first-child::before {
+	content: url('../images/pinpoint.svg');
+}
+._wm div:first-child::before {
+	content: url('../images/windmill.svg');
+}
+._gear div:first-child::before {
+	content: url('../images/cog.svg');
+}
+._target::before {
+	content: url('../images/target.svg');
+}
+
+._open::before, ._closed::before {
 	width:12px;
-	height:12px;
+	display:inline-flex;
+}
+._open::before {
+	content: url('../images/arrow-down.svg');
 }
 ._closed::before {
-	display:inline-flex;
 	content: url('../images/arrow-right.svg');
-	width:12px;
-	height:12px;
+}
+span {
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-left:3px;
+}
+._target div div div {
+	padding-left:5px;
+}
+
+._item:not(._active_large):hover {
+	background-color: #e6e7ea;
+	margin-right:5%;
+	cursor:pointer;
+	border-radius: 5px;
+}
+._parent div img:not(.active_small):hover {
+	background-color: #CFD0D4;
+	cursor:pointer;
+	border-radius: 25%;
 }
