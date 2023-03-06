@@ -1,3 +1,8 @@
+/**
+ * Simple function for opening or closing and then removing (hiding) inner content
+ *
+ * @param {element} e The element to close.
+ */
 function toggleInner(e) {
 	e.classList.toggle("_open");
 	e.classList.toggle("_closed");
@@ -9,6 +14,7 @@ function toggleInner(e) {
 }
 
 window.onload = function() {
+	// On Click listener for main section
 	document.querySelectorAll("._item").forEach((e) => { 
 		e.addEventListener("click", () => {
 			if(e.classList.contains("_active_large") && (e.classList.contains("_closed") || e.classList.contains("_open"))) {
@@ -20,6 +26,7 @@ window.onload = function() {
 		});
 	});
 	
+	// On Click listener for navbar
 	document.querySelectorAll("._parent > div img").forEach((e) => { 
 		e.addEventListener("click", () => {
 			if(e.classList.contains("._active_small")) return;

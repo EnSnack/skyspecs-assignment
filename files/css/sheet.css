@@ -67,6 +67,7 @@ img {
 	max-width:25%;
 	padding:20px;
 	height:100%;
+	margin:0;
 }
 ._parent {
 	background-color: #E6E7E8;
@@ -88,12 +89,13 @@ img {
    ========================================================================== */
 ._content {
 	background-color:#fff;
-	min-height:811px;
+	min-height:908px;
 }
 ._content li {
-	padding-bottom:1%;
+	padding-bottom:2px;
+	padding-top:2px;
+	min-height:40px;
 }
-
 ._active_large ._right {
 	padding-right:0;
 	margin-right:0;
@@ -101,7 +103,6 @@ img {
 ._active_large {
 	background-color: #e6e7ea;
 	border-radius: 5px;
-	padding-left:0;
 	margin-right:5%;
 	padding:0 5px 5px 0;
 	cursor:default;
@@ -116,9 +117,6 @@ img {
 	font-size:13px;
 	color:#464646;
 }
-._first_item {
-	padding-top:1%;
-}
 ._target div div div {
 	padding-left:5px;
 }
@@ -127,14 +125,14 @@ img {
    Images
    ========================================================================== */
 ._site div:first-child::before, ._wm div:first-child::before, ._gear div:first-child::before, ._target::before {
-	width:24px;
+	min-width:24px;
+	min-height:24px;
 	margin-top:auto;
 	margin-bottom:auto;
 	margin-right:5px;
 	margin-left:2px;
 	display:inline-flex;
 }
-
 ._site div:first-child::before {
 	content: url('../images/pinpoint.svg');
 }
@@ -150,6 +148,7 @@ img {
 
 ._closed::before, ._open::before {
 	width:12px;
+	margin-right:3px;
 	display:inline-flex;
 }
 ._open::before {
