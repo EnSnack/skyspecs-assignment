@@ -1,19 +1,49 @@
-div {
-	font-family: 'Noto Sans', sans-serif;
-}
-
+/* ==========================================================================
+   Universal CSS
+   ========================================================================== */
 ul, li {
 	list-style-type:none;
 }
-
-._content li {
-	padding-bottom:1%;
+span {
+	margin-top:auto;
+	margin-bottom:auto;
+	padding-left:3px;
+	font-family: 'Noto Sans', sans-serif;
 }
 
+/* ==========================================================================
+   Settings
+   ========================================================================== */
 ._noPadding {
 	padding:0;
 }
+._marg5 {
+	margin: 5px;
+}
+._column {
+	flex-direction:column;
+}
+._shadow {
+	box-shadow: 0px 0px 2px grey
+}
+._flex {
+	display:flex;
+}
+._center {
+	align-items:center;
+}
+._left {
+	justify-content: flex-start;
+}
+._right {
+	justify-content: flex-end;
+	margin-left:auto;
+	padding-right:15px;
+}
 
+/* ==========================================================================
+   Top Level
+   ========================================================================== */
 ._back {
 	background-color:#e2e6ec;
 	max-width:25%;
@@ -24,42 +54,26 @@ ul, li {
 	max-height:25%;
 	padding-left:15px;
 }
-._content {
-	background-color:#fff;
-}
-
-._flex {
-	display:flex;
-}
-._center {
-	align-items:center;
-}
-
-._shadow {
-	box-shadow: 0px 0px 2px grey
-}
-
-._left {
-	justify-content: flex-start;
-}
-._right {
-	justify-content: flex-end;
-	margin-left:auto;
-	padding-right:15px;
-}
-._column {
-	flex-direction:column;
-}
-
-._marg5 {
-	margin: 5px;
-}
-
 ._active_small {
 	border-radius: 25%;
 	background-color: #CFD0D4;
 	padding:5px;
 }
+._icon {
+	width:24px;
+	height:24px;
+}
+
+/* ==========================================================================
+   Content level
+   ========================================================================== */
+._content {
+	background-color:#fff;
+}
+._content li {
+	padding-bottom:1%;
+}
+
 ._active_large {
 	background-color: #e6e7ea;
 	border-radius: 5px;
@@ -68,19 +82,12 @@ ul, li {
 	margin-right:5%;
 	padding:5px 5px 5px 0;
 }
-
-._icon {
-	width:24px;
-	height:24px;
-}
-
 ._item._closed {
 	padding-left: 1%;
 }
 ._item {
 	padding-left:5%;
 }
-
 ._info {
 	font-size:13px;
 	color:#464646;
@@ -88,7 +95,13 @@ ul, li {
 ._first_item {
 	padding-top:1%;
 }
+._target div div div {
+	padding-left:5px;
+}
 
+/* ==========================================================================
+   Images
+   ========================================================================== */
 ._site div:first-child::before, ._wm div:first-child::before, ._gear div:first-child::before, ._target::before {
 	width:24px;
 	margin:3px 5px 3px 3px;
@@ -118,15 +131,10 @@ ul, li {
 ._closed::before {
 	content: url('../images/arrow-right.svg');
 }
-span {
-	margin-top:auto;
-	margin-bottom:auto;
-	padding-left:3px;
-}
-._target div div div {
-	padding-left:5px;
-}
 
+/* ==========================================================================
+   Hovers
+   ========================================================================== */
 ._item:not(._active_large):hover {
 	background-color: #e6e7ea;
 	margin-right:5%;
