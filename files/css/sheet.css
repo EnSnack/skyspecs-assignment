@@ -124,7 +124,7 @@ img {
 /* ==========================================================================
    Images
    ========================================================================== */
-._site div:first-child::before, ._wm div:first-child::before, ._gear div:first-child::before, ._target::before {
+._site div:first-child::before, ._windmill div:first-child::before, ._gear div:first-child::before, ._target div:not(._column):first-child::before {
 	min-width:24px;
 	min-height:24px;
 	margin-top:auto;
@@ -136,13 +136,13 @@ img {
 ._site div:first-child::before {
 	content: url('../images/pinpoint.svg');
 }
-._wm div:first-child::before {
+._windmill div:first-child::before {
 	content: url('../images/windmill.svg');
 }
 ._gear div:first-child::before {
 	content: url('../images/cog.svg');
 }
-._target::before {
+._target div:not(._column):first-child::before {
 	content: url('../images/target.svg');
 }
 
